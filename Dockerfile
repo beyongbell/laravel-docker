@@ -21,5 +21,6 @@ WORKDIR /app
 COPY composer.json .
 RUN composer install --no-plugins --no-scripts
 COPY . .
+COPY .env.example .env
 
 CMD php artisan serve --host=0.0.0.0 --port=80
