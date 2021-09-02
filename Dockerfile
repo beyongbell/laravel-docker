@@ -23,4 +23,4 @@ RUN composer install --no-plugins --no-scripts
 COPY . .
 COPY .env.development .env
 
-CMD php artisan key:generate &&  php artisan migrate:fresh && php artisan serve --host=0.0.0.0 --port=80
+CMD php artisan key:generate && php artisan serve --host=0.0.0.0 --port=80
